@@ -1,0 +1,29 @@
+O STRAT HIVE
+
+
+1] GO TO HADOOP/SBIN/CMD and run below command
+
+.\start-all.cmd
+
+
+2] goto cygwin and run bellow command
+
+export HADOOP_HOME='/cygdrive/c/hadoop'
+export PATH=$PATH:$HADOOP_HOME/bin
+export HIVE_HOME='/cygdrive/c/apachehive'
+export PATH=$PATH:$HIVE_HOME/bin
+export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$HIVE_HOME/lib/*.jar
+
+
+3]run below coomand in cygwin
+
+$HIVE_HOME/bin/schematool -dbType derby -initSchema
+
+
+4]goto dbderby/bin/cmd and run below command
+
+.\StartNetworkServer -h 0.0.0.0
+
+5]goto apachehive/bin/cmd
+
+hive

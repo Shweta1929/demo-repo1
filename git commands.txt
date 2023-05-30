@@ -1,0 +1,65 @@
+git --version
+git status
+git init.....git initialisation
+
+files type-untrack,unmodified,modified,staged
+whatever raw file we create in thid folder(git) that will be by default a untrack file
+
+we created one particular file and added it in a particular folder using add command i.e nothing 
+but a staged area
+
+clear....command...to clear
+touch demo.txt...(we created a file name demo.txt)
+after creating demo.txt file type git status in command line,it is untracked file,now we have to add
+it in staged area or tracked file using following command
+# git add demo.txt
+# git status
+to open this new file(demo.txt file)
+#start demo.txt
+type"this is first version" in the opened file and then save and close it
+then check git stat
+#git status......now our file is in modified stage...demo.txt
+to go from modified to staged
+# git add demo.txt.....now file came in staged mode
+
+create demo1 and demo2 this text files in git tutorial folder
+# git status
+to make this two files tracked
+#git add .
+to commit all things...after commiting these files went to unmodified mode,we can not modify it
+# git commit -m 'initialcommit'........error author identity unknown
+after entering data to demo1.txt.....(hello world) 
+# git add .
+ # git status
+
+to create github account
+email-shdeshmukh74051@gmail.com
+password-giit@1993
+username-Shweta1929
+
+git log
+git config --global user.name shweta
+git config --global user.email shdeshmukh74051@gmail.com
+git config --global user.username Shweta1929
+to check
+git config --global user.name 
+git config --global user.email
+git config --global user.username
+git log
+git status
+git commit -m 'second commit'
+git log
+git remote add origin
+git remote -v
+git push origin master
+
+in new folder123 open git batch and
+git clone git@github.com:Shweta1929/tutorial.git
+
+
+git pull=fledge and clone
+pull=webpage to local
+push=local to webpage
+
+project IAM user 
+password-Wsl@7993
